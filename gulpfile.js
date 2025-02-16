@@ -34,5 +34,4 @@ const cssmini = require('gulp-cssnano');
         exports.watch = function(){
             gulp.watch('src/scss/*.scss', {ignoreInitial:false},gulp.series(styles));
             gulp.watch('assets/imagens/*',{ignoreInitial:false}, gulp.series(minify));
-            gulp.watch('src/css/*.css',{ignoreInitial:false}, gulp.series(minifycss));
         }         
